@@ -12,12 +12,7 @@
        var i;
        for (i = 0; i < acc.length; i++) {
        acc[i].addEventListener("click", function() {
-       /* Toggle between adding and removing the "active" class,
-       to highlight the button that controls the panel */
        this.classList.toggle("active");
-
-
-       /* Toggle between hiding and showing the active panel */
        var panel = this.nextElementSibling;
        if (panel.style.display === "block") {
            panel.style.display = "none";
@@ -30,20 +25,19 @@
 </head>
 <body>
     <div id="wrapper">
-        <!-- copiado de responsive topnav en howto de w3schools -->
         <nav>
             <div class="topnav" id="myTopnav">
-                <a href="#home" class="active">Intro</a>
-                <a href="#news">Types</a>
-                <a href="#contact">Gallery</a>
-                <a href="#about">About</a>
+                <a href="#intro" class="active">Intro</a>
+                <a href="#ejemplo-grid-4">Types</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#info">Information</a>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
                 </a>
             </div>
         </nav>
         <section id= "hero">
-            SPORT CARS
+            Sport Cars
         </section>
         <section id="intro">
             <div class="titulo">Intro</div>
@@ -113,7 +107,31 @@
                     </div>
                 </div>
      
-              </section>
+            </section>
+
+            <section id="info">
+
+                <h3>Information</h3>
+                <button class="accordion">Who invented sports cars?</button>
+                <div class="panel">
+                    <p></p>
+                </div>
+     
+     
+                <button class="accordion">What was the first sports car?</button>
+                <div class="panel">
+                    <p></p>
+                </div>
+     
+     
+                <button class="accordion">How fast does a sports car go?</button>
+                <div class="panel">
+                    <p></p>
+                </div>
+
+
+
+
         <footer>
             Autora: Dana Espinosa Ramos
         </footer></br>
