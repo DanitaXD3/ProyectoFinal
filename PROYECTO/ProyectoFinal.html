@@ -6,26 +6,116 @@
     <title>SPORT CARS - Home</title>
     <link rel="stylesheet" href="./css/ProyectoFinal.css">
     <link rel="shortcut icon" href="./img/coche.png" type="image/x-icon">
+    <script src="./JS/Funciones.js"></script>
+   <script>
+       var acc = document.getElementsByClassName("accordion");
+       var i;
+       for (i = 0; i < acc.length; i++) {
+       acc[i].addEventListener("click", function() {
+       /* Toggle between adding and removing the "active" class,
+       to highlight the button that controls the panel */
+       this.classList.toggle("active");
+
+
+       /* Toggle between hiding and showing the active panel */
+       var panel = this.nextElementSibling;
+       if (panel.style.display === "block") {
+           panel.style.display = "none";
+       } else {
+           panel.style.display = "block";
+       }
+       });
+   }
+   </script>
 </head>
 <body>
     <div id="wrapper">
-        <nav>HOME - INTRO - GALLERY  </nav>
+        <!-- copiado de responsive topnav en howto de w3schools -->
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <a href="#home" class="active">Intro</a>
+                <a href="#news">Types</a>
+                <a href="#contact">Gallery</a>
+                <a href="#about">About</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>
         <section id= "hero">
             SPORT CARS
         </section>
-        <br>
-        <section>
-            Aunque cada día son menos frecuentes de ver en nuestras carreteras, y las restricciones a las emisiones están provocando su desaparición o transformación, los deportivos siguen siendo un segmento del mercado fundamental en el que las emociones, el placer en la conducción, el diseño, las prestaciones y el dinamismo son las principales cualidades a tener en cuenta.
+        <section id="intro">
+            <div class="titulo">Intro</div>
+     
+     
+            <img id="drakkar" src="./img/cocheintro.jpg" alt="CoheDeprotivo">
+     
+     
+            <p>A sports car, also known as a sports car, is a type of vehicle primarily designed to offer high performance, speed, maneuverability and an exciting driving experience.<p>These cars are often noted for their aerodynamic design, engine power, advanced performance features, and innovative technology.</p>
+            <p>Sports cars can vary in terms of design, performance and price. Some examples of brands known for manufacturing sports cars include Ferrari, Lamborghini, Porsche, McLaren, Chevrolet Corvette, among others. These vehicles are prized for both their track performance and aesthetic appeal, making them symbols of speed, luxury and prestige in the automotive industry.</p>
+            </section>
 
-            También, aunque en muchos casos no sean del todo rentables a pesar de sus elevados precios, muchos fabricantes siguen comercializando este tipo de modelos porque son un producto halo, es decir, impulsan las ventas del resto de modelos y la imagen de la marca.
-        </section></br>
-        <br>
-        <section>
-            aqui va la gallery
-        </section></br>
-        <br>
+            <section id="ejemplo-grid-4">
+                <div class="titulo">Types</div>
+                <div class="grid-4">
+                    <div class="col-4">
+                        <p>When we talk about 'old car' we are referring to a vehicle that has stood the test of time and continues to circulate on the roads. However, it does not qualify as a 'classic car'.</p>
+                        <button><b>Read More</b></button>
+                    </div>
+                    <div class="col-4">
+                        <img src="./img/cocheantiguo.jpg" alt="cocheantiguo">
+                    </div>
+                    <div class="col-4">
+                        <img src="./img/cochemoderno.jpg" alt="cochemoderno">
+                    </div>
+                    <div class="col-4">
+                        <p>They are cars that are characterized by their great power, rapid acceleration, agility in driving and their ability to reach high speeds. The engines of sports cars are usually powerful and high-performance, which allows them to reach very high speeds in a short time.</p>
+                        <button><b>Read more</b></button>
+                    </div>
+                    <div class="col-4">
+                        <p>Each team assembles its own car (name for Formula one cars) and competes for two championships: the drivers' championship and the teams' championship.</p>
+                    <button><b>Read More</b></button>
+                    </div>
+                    <div class="col-4">
+                        <img src="./img/formula1.jpg" alt="formula1">
+                    </div>
+                    <div class="col-4">
+                        <img src="./img/motosport.jpg" alt="motosport">
+                    </div>
+                    <div class="col-4">
+                        <p>MotoGP. They call it the queen category of motorcycling because it is the world's highest expression of high-speed motorcycle competition. The fastest two-wheeled prototypes to compete on the circuit. Where the best drivers in the world are supposed to compete.</p>
+                        <button><b>Read more</b></button>
+                    </div>
+                </div>
+             </section>
+
+             <section id="gallery">
+                <div class="titulo">Gallery</div>
+     
+     
+                <div class="grid-cuatro">
+                    <div class="col-cuatro">
+                        <img src="./img/mercedes.jpg" alt="mercedes">
+                        <h3>Mercedes-AMG GT</h3>
+                    </div>
+                    <div class="col-cuatro">
+                        <img src="./img/bmw.jpg" alt="bmw">
+                        <h3>BMW Cinco Series (E Treinta y cuatro)</h3>
+                    </div>
+                    <div class="col-cuatro">
+                        <img src="./img/supra.jpg" alt="supra">
+                        <h3>Toyota Supra</h3>
+                    </div>
+                    <div class="col-cuatro">
+                        <img src="./img/audi.jpg" alt="audi">
+                        <h3>Audi R OCHO</h3>
+                    </div>
+                </div>
+     
+              </section>
         <footer>
-            autora: Dana Espinosa Ramos
+            Autora: Dana Espinosa Ramos
         </footer></br>
     </div>
 </body>
