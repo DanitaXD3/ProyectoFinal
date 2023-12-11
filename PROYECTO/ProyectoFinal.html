@@ -7,21 +7,6 @@
     <link rel="stylesheet" href="./css/ProyectoFinal.css">
     <link rel="shortcut icon" href="./img/coche.png" type="image/x-icon">
     <script src="./JS/Funciones.js"></script>
-   <script>
-       var acc = document.getElementsByClassName("accordion");
-       var i;
-       for (i = 0; i < acc.length; i++) {
-       acc[i].addEventListener("click", function() {
-       this.classList.toggle("active");
-       var panel = this.nextElementSibling;
-       if (panel.style.display === "block") {
-           panel.style.display = "none";
-       } else {
-           panel.style.display = "block";
-       }
-       });
-   }
-   </script>
 </head>
 <body>
     <div id="wrapper">
@@ -41,11 +26,11 @@
         </section>
         <section id="intro">
             <div class="titulo">Intro</div>
-     
-     
+    
+    
             <img id="drakkar" src="./img/cocheintro.jpg" alt="CoheDeprotivo">
-     
-     
+    
+    
             <p>A sports car, also known as a sports car, is a type of vehicle primarily designed to offer high performance, speed, maneuverability and an exciting driving experience.<p>These cars are often noted for their aerodynamic design, engine power, advanced performance features, and innovative technology.</p>
             <p>Sports cars can vary in terms of design, performance and price. Some examples of brands known for manufacturing sports cars include Ferrari, Lamborghini, Porsche, McLaren, Chevrolet Corvette, among others. These vehicles are prized for both their track performance and aesthetic appeal, making them symbols of speed, luxury and prestige in the automotive industry.</p>
             </section>
@@ -82,20 +67,20 @@
                         <button><b>Read more</b></button>
                     </div>
                 </div>
-             </section>
+            </section>
 
-             <section id="gallery">
+            <section id="gallery">
                 <div class="titulo">Gallery</div>
-     
-     
+    
+    
                 <div class="grid-cuatro">
                     <div class="col-cuatro">
-                        <img src="./img/mercedes.jpg" alt="mercedes">
-                        <h3>Mercedes-AMG GT</h3>
+                        <img src="./img/bmw.jpg" alt="bmw">
+                        <h3>BMW five series</h3>
                     </div>
                     <div class="col-cuatro">
-                        <img src="./img/bmw.jpg" alt="bmw">
-                        <h3>BMW Cinco Series (E Treinta y cuatro)</h3>
+                        <img src="./img/Miata.jpg" alt="miata">
+                        <h3>Mazda MX-Five</h3>
                     </div>
                     <div class="col-cuatro">
                         <img src="./img/supra.jpg" alt="supra">
@@ -106,7 +91,7 @@
                         <h3>Audi R OCHO</h3>
                     </div>
                 </div>
-     
+    
             </section>
 
             <section id="info">
@@ -114,27 +99,44 @@
                 <h3>Information</h3>
                 <button class="accordion">Who invented sports cars?</button>
                 <div class="panel">
-                    <p></p>
+                    <p>Introduced in one thousand nine hundred one, the thirty-five hp was designed by Wilhelm Maybach and Paul Daimler (Gottlieb Daimler's son). It represented a major departure from previous car designs, which bore a close resemblance to horse carriages. The 35 hp became a dominant racing machine thanks to its reliability and powerful engine.</p>
                 </div>
-     
-     
+    
+    
                 <button class="accordion">What was the first sports car?</button>
                 <div class="panel">
-                    <p></p>
+                    <p>Many of the world's motoring historians have acclaimed the 'Prince Henry' Vauxhall as the very first sports car. Designed by much-admired Vauxhall engineer Laurence Pomeroy, this car was named after Pomeroy's success with the twenty hp A-type in the thousand nine hundred ten Tour of Prussia an event instigated by Prince Henry of Prussia.</p>
                 </div>
-     
-     
+    
+    
                 <button class="accordion">How fast does a sports car go?</button>
                 <div class="panel">
-                    <p></p>
+                    <p>It is not uncommon for regular sports cars to crack two hundred mph these days, speeds only a handful of supercars could crack just fiveteen years ago. While two hundred mph seems easy these days, cars that top two hundred and fifty+ mph need brute force and incredible engineering on another level.</p>
                 </div>
 
-
-
-
         <footer>
-            Autora: Dana Espinosa Ramos
+            <p>Youtube</p>
+            <p>Instagram</p>
+            <p>Twitter</p>
+            <p>Sport Cars</p>
+            <p> Dana Espinosa Ramos</p>
         </footer></br>
     </div>
+    
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+        });
+    }</script>
+    
 </body>
 </html>

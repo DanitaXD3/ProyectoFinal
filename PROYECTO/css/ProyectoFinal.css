@@ -40,7 +40,7 @@ body {background-color: rgb(14, 13, 13);
         text-align: center;
         box-shadow: 2px;
         border-radius: 3%;
-       padding: 3%;
+        padding: 3%;
 
 }
 
@@ -152,23 +152,23 @@ button {
     text-transform: uppercase;
     font-size: 15px;
     transition: all .5s ease;
-   }
-   
-   button:hover {
+}
+
+button:hover {
     letter-spacing: 3px;
     background-color: hsl(298, 80%, 48%);
     color: hsl(0, 0%, 100%);
     box-shadow: rgb(158, 24, 220) 0px 7px 29px 0px;
-   }
-   
-   button:active {
+}
+
+button:active {
     letter-spacing: 3px;
     background-color: hsl(290, 80%, 48%);
     color: hsla(0, 0%, 100%, 0.74);
     box-shadow: rgb(220, 24, 210) 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
-   }
+}
 
 
 /*************section gallery**********/
@@ -217,7 +217,7 @@ button {
 .accordion {
     background-color: #222222;
     font-size: 0.7em;
-    color: #eee;
+    color: #e9e9e9;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -228,7 +228,7 @@ button {
 }
 
 
-  
+
 .active, .accordion:hover {
     font-size: 1em;
     background-color: #a520aa;
@@ -251,10 +251,14 @@ button {
 
 .panel {
     padding: 0 18px;
-    background-color: white;
+    background-color: rgb(27, 27, 29);
     display: none;
     overflow: hidden;
 }
+
+#info .panel {text-align:left;
+            font-size:0.8em;
+            text-align:justify;}
 
 
 /********** responsividad *********/
