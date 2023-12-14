@@ -87,6 +87,7 @@ nav {font-family:titulo;
     padding-left:10px;
 }
 
+
 /***** hero section **********/
 
 #hero {background-image: url(../img/Hero.jpg);
@@ -169,7 +170,6 @@ button:active {
     transform: translateY(10px);
     transition: 100ms;
 }
-
 
 /*************section gallery**********/
 
@@ -261,6 +261,29 @@ button:active {
             text-align:justify;}
 
 
+/********** footer *************/
+
+footer{background-color:#363636;
+        color:white;
+        padding:20px;
+        font-family:texto;}
+        
+.fa {font-size: 1.3em;
+    margin-right:10px;}
+    
+.fa-twitter-square {color:#55ACEE;
+                    font-family:texto;}
+
+.fa-youtube-play {color:#C4302B;
+                    font-family:texto;}
+
+.fa-facebook-official {color:#3B5998;
+                        font-family:texto;}
+
+.fa-instagram {color:#DD2AFB;
+                font-family:texto;}
+
+
 /********** responsividad *********/
 
 @media only screen and (width<650px){
@@ -306,4 +329,3 @@ button:active {
     text-align: left;
     }
 }
-
