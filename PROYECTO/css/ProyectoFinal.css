@@ -266,23 +266,27 @@ button:active {
 footer{background-color:#363636;
         color:white;
         padding:20px;
-        font-family:texto;}
+        font-family:texto;
+        border-radius: 20%;}
         
-.fa {font-size: 1.3em;
-    margin-right:10px;}
+.fa a {font-size: 1.3em;
+    margin-right:10px;
+    color:white;}
     
 .fa-twitter-square {color:#55ACEE;
-                    font-family:texto;}
+        font-family:texto;}
 
 .fa-youtube-play {color:#C4302B;
-                    font-family:texto;}
+        font-family:texto;}
 
 .fa-facebook-official {color:#3B5998;
-                        font-family:texto;}
+            font-family:texto;}
 
 .fa-instagram {color:#DD2AFB;
-                font-family:texto;}
+    font-family:texto;}
 
+.nav a {color:rgb(182, 182, 182);
+        text-align:center;}
 
 /********** responsividad *********/
 
