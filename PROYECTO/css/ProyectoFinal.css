@@ -98,7 +98,7 @@ nav {font-family:titulo;
         color: rgb(255, 255, 255);
         font-size:3em ;
         font-family: section;
-        padding-top: 5%; } 
+        padding-top: 3%; } 
 
 
 /*********** Intro section ***************/
@@ -267,7 +267,8 @@ footer{background-color:#363636;
         color:white;
         padding:20px;
         font-family:texto;
-        border-radius: 20%;}
+        border-radius: 20%;
+        text-align: center;}
         
 .fa a {font-size: 1.3em;
     margin-right:10px;
